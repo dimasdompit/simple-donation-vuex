@@ -83,9 +83,9 @@ export default {
     },
     submitDonasi () {
       // dispatch BERARTI MEMANGGIL FUNGSI YANG ADA DI ACTION
-    // DIMANA FUNGSI TERSEBUT BERNAMA save_donasi
-    // DAN BERADA DIDALAM MODULE transaksi
-    // JADI CARA MEMANGGILNYA ADALAH namamodule/namafungsi
+      // DIMANA FUNGSI TERSEBUT BERNAMA save_donasi
+      // DAN BERADA DIDALAM MODULE transaksi
+      // JADI CARA MEMANGGILNYA ADALAH namamodule/namafungsi
       this.$store.dispatch('transaksi/save_donasi', {
         id: Math.random().toString(36).substring(7),
         donatur: this.donatur,
